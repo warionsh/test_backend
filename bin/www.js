@@ -1,4 +1,3 @@
-
 const express = require('express');
 const { ApolloServer, gql } = require('apollo-server-express');
 
@@ -7,7 +6,7 @@ const { typeDefs, resolvers } = require("./schema.js");
 const { Actor, data } = require("./Actor.js");
 
 
-var app = express();
+const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -27,7 +26,7 @@ app.get('/', function(req, res) {
     res.send('Server up');
 });
 
-var port = '8080';
+const port = '8080';
 app.set('port', port);
 
 

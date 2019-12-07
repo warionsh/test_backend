@@ -1,4 +1,3 @@
-
 const { Actor, data } = require("./Actor.js");
 const { gql } = require('apollo-server');
 

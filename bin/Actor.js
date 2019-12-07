@@ -1,4 +1,3 @@
-
 class Actor {
     constructor(id, name, description) {
         this.id = id;
